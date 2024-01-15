@@ -52,7 +52,7 @@ git submodule update --init --recursive
 ### 3. Copy the Environment Template
 
 ```bash
-cp courroux-sapp/.env.example courroux-sapp/.env
+cp courroux-sme/.env.example courroux-sme/.env
 ```
 
 #### Change Passwords:
@@ -60,9 +60,9 @@ cp courroux-sapp/.env.example courroux-sapp/.env
 *It is strongly advised to change the default passwords in both the Docker Compose file (docker-compose.yml) and the courroux-sme .env file. Replace "root" with a secure password of your choice.*
 
  > 
-> Open docker-compose.yml and update the MYSQL_ROOT_PASSWORD and MYSQL_PASSWORD values under the db service.
+> Open docker-compose.yml and update the MYSQL_USER and MYSQL_PASSWORD values under the db service.
  > 
-> Open courroux-sme/.env and update the password in the DATABASE_URL variable.
+> Open courroux-sme/.env and update the password and username in the DATABASE_URL variable.
  > 
 
 ### 4. Run the deploy.sh script
