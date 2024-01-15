@@ -19,8 +19,13 @@ done
 # Deploy the database and phpMyAdmin
 docker-compose up -d --build db phpmyadmin
 
+./wait-for-it.sh -t 0 -q localhost:8083
+# # Wait for 5 seconds (adjust the sleep duration as needed)
+# sleep 5
+
+docker-compose up -d --build courroux-sapp
+
 # Deploy the back-end
+sleep 10
 docker-compose up -d --build courroux-sme
 
-# Deploy the front-end
-docker-compose up -d --build courroux-sapp
