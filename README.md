@@ -60,7 +60,7 @@ cp courroux-sme/.env.example courroux-sme/.env
 *It is strongly advised to change the default passwords in both the Docker Compose file (docker-compose.yml) and the courroux-sme .env file. Replace "root" with a secure password of your choice.*
 
  > 
-> Open docker-compose.yml and update the MYSQL_USER and MYSQL_PASSWORD values under the db service.
+> Open docker-compose.yml and update the MYSQL_USER, MYSQL_PASSWORD and MYSQL_ROOT_PASSWORD values under the db service.
  > 
 > Open courroux-sme/.env and update the password and username in the DATABASE_URL variable.
  > 
