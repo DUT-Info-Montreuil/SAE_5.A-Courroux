@@ -34,7 +34,50 @@ Courroux is a web application developed for timetable management, initiated by t
 ## Setup
 ### Installation
 
-//TODO
+### 1. Clone the Repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/DUT-Info-Montreuil/SAE_5.A-Courroux.git
+cd SAE_5.A-Courroux/
+```
+
+### 2. Initialize and Update Submodules
+
+```bash
+git submodule update --init --recursive
+```
+
+### 3. Copy the Environment Template
+
+```bash
+cp courroux-sapp/.env.example courroux-sapp/.env
+```
+
+#### Change Passwords:
+
+*It is strongly advised to change the default passwords in both the Docker Compose file (docker-compose.yml) and the courroux-sme .env file. Replace "root" with a secure password of your choice.*
+
+ > 
+> Open docker-compose.yml and update the MYSQL_ROOT_PASSWORD and MYSQL_PASSWORD values under the db service.
+ > 
+> Open courroux-sme/.env and update the password in the DATABASE_URL variable.
+ > 
+
+### 4. Run the deploy.sh script
+```bash
+./deploy.sh
+```
+
+The deploy.sh script will traverse all directories, execute deployment scripts (if any), and then launch the services using Docker Compose.
+
+### Important Note :warning:
+Before running the deploy.sh script, ensure that you have correctly configured the .env and docker-compose.yml files as explained earlier.
+
+### Security Notice :lock:
+
+For security reasons, please be aware that during your future pushes to this `.git`, the `docker-compose.yml` and `.env` files will not be updated.
 
 ### Configuration
 
