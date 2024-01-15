@@ -1,0 +1,6 @@
+[submodule "courroux-sme"]
+	path = courroux-sme
+	url = https://github.com/DUT-Info-Montreuil/SAE_5.A-Courroux-SME.git
+[submodule "courroux-sapp"]
+	path = courroux-sapp
+	url = https://github.com/DUT-Info-Montreuil/SAE_5.A-Courroux-SAPP.git
