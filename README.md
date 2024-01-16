@@ -51,7 +51,7 @@ git submodule update --init --recursive
 
 ### 3. Change Passwords
 
-*It is strongly advised to change the default passwords in both the Docker Compose file (docker-compose.yml). Replace "root" with a secure password of your choice.*
+*It is strongly advised to change the default passwords in the Docker Compose file (docker-compose.yml). Replace "root" with a secure password of your choice.*
 
  > 
 > Open docker-compose.yml and update the MYSQL_USER, MYSQL_PASSWORD and MYSQL_ROOT_PASSWORD values under the db service.
