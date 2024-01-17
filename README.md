@@ -56,7 +56,7 @@ git submodule update --init --recursive
  > 
 > Open docker-compose.yml and update the MYSQL_USER, MYSQL_PASSWORD and MYSQL_ROOT_PASSWORD values under the db service.
  >
-> Open DockerFile and update de root value in the DATABASE_URL.
+> Open DockerFile and update the root value in the DATABASE_URL.
  > 
 
 ### 4. Run the deploy.sh script
