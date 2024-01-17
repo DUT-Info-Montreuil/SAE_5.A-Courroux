@@ -51,10 +51,12 @@ git submodule update --init --recursive
 
 ### 3. Change Passwords
 
-*It is strongly advised to change the default passwords in the Docker Compose file (docker-compose.yml). Replace "root" with a secure password of your choice.*
+*It is strongly advised to change the default passwords in the Docker Compose file (docker-compose.yml)and in the DockerFile located in courroux-sme. Replace "root" with a secure password of your choice.*
 
  > 
 > Open docker-compose.yml and update the MYSQL_USER, MYSQL_PASSWORD and MYSQL_ROOT_PASSWORD values under the db service.
+ >
+> Open DockerFile and update de root value in the DATABASE_URL.
  > 
 
 ### 4. Run the deploy.sh script
